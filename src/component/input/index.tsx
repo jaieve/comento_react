@@ -39,13 +39,15 @@ const Input = () => {
 
   return (
     <div>
-      <input id="title" value={request.title} onChange={handleChange}></input>
-      <br />
-      <input
-        id="content"
-        value={request.content}
-        onChange={handleChange}
-      ></input>
+      <form>
+        <input id="title" value={request.title} onChange={handleChange}></input>
+        <br />
+        <input
+          id="content"
+          value={request.content}
+          onChange={handleChange}
+        ></input>
+      </form>
     </div>
   );
 };
