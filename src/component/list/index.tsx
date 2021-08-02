@@ -22,9 +22,9 @@ const List = () => {
 
   useEffect(() => {
     const getPosts = async () => {
-      // const posts = await axios.get<PostResponse>("post");
-      // setPosts(posts.data);
-      // console.log(posts);
+      const posts = await axios.get<PostResponse>("post");
+      setPosts(posts.data);
+      console.log(posts);
     };
     getPosts();
   }, []);
