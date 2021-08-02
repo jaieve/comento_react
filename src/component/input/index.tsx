@@ -41,13 +41,19 @@ const Input = () => {
       <form>
         <h3>글쓰기 폼</h3>
         <label>title</label>
-        <input id="title" value={request.title} onChange={handleChange}></input>
+        <input
+          id="title"
+          value={request.title}
+          onChange={handleChange}
+          required
+        ></input>
         <br />
         <label>writer</label>
         <input
           id="writer"
           value={request.writer}
           onChange={handleChange}
+          required
         ></input>
         <br />
         <label>content</label>
@@ -55,6 +61,7 @@ const Input = () => {
           id="content"
           value={request.content}
           onChange={handleChange}
+          required
         ></input>
         <br />
         <button onClick={writePost}>글 등록</button>
