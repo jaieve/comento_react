@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import axios from "axios";
 
@@ -27,9 +26,9 @@ const Input = () => {
 
   const handleChange = (data: any) => {
     // 콘솔에서 값 확인
-    console.log(data.target.id, data.target.value);
-
     const { id, value } = data.target;
+
+    console.log(data.target.id, data.target.value);
 
     setRequest({
       ...request,
@@ -47,6 +46,7 @@ const Input = () => {
           value={request.content}
           onChange={handleChange}
         ></input>
+        <button onClick={writePost}></button>
       </form>
     </div>
   );

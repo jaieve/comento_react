@@ -1,5 +1,3 @@
-import React from "react";
-
 // default props 정의
 interface PostProps {
   id: number;

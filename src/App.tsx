@@ -4,6 +4,9 @@ import Input from "./component/input/index";
 import List from "./component/list/index";
 import WriteButton from "./component/button/index";
 import "./App.css";
+// import Cors from "cors";
+
+// const cors = require("cors");
 
 const App = () => {
   setAxiosDefaults();
